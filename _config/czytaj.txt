@@ -1,0 +1,84 @@
+
+0.
+pyton uruchamianie
+python nawa-pliku.py 
+lub
+python3 nawa-pliku.py 
+
+lub
+
+sudo chmod +x naza-pliku.py 
+musi byc w naglowku deklaracja python 
+uruchamianie wtedy to:
+sudo ./nazwa-pliku.py
+
+
+
+1.
+linux konfiguracja pythona env, te polecenia
+freeze itd
+
+2.
+vim - autocomplete
+
+vim python
+
+http://fisadev.github.io/fisa-vim-config/
+
+sudo apt-get install curl vim exuberant-ctags git ack-grep
+sudo pip install pep8 flake8 pyflakes isort yapf
+
+
+3.
+vim 
+ctrl-z - szybkie uruchamianie
+
+4.
+python skrypt - 
+main funkcja
+naglowek - deklaracja jaka wersja pythona
+
+5.
+list cwiczen
+
+6.
+sudo apt-get install silversearcher-ag
+
+7.
+vim jak zakomentowac blok?
+
+8.
+zaznakczanie blokowe
+shift-V 
+ctr-v  
+
+jak wyciac wkelic do tego samego pliku
+jak do innego 
+
+9.
+vim jak przelczacac sie miedzy otwartymi plikami
+
+10.
+vim split - jak korzystac
+
+11.
+Ag - search - jak 
+
+12.
+ctrl-p - jak efektywnie
+
+13.
+nerd tree jak w pythonie
+
+14.
+ctrl-z 
+
+15.
+wejscie do linii polecen z vim oraz powrot
+
+16.
+na koniec cos dopisac
+$ - potem a (nie i)
+
+
+
