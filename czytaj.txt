@@ -1,8 +1,17 @@
 1.
-linux konfiguracja pythona env
+linux konfiguracja pythona env, te polecenia
+freeze itd
 
 2.
-vim - autokomplete
+vim - autocomplete
+
+vim python
+
+http://fisadev.github.io/fisa-vim-config/
+
+sudo apt-get install curl vim exuberant-ctags git ack-grep
+sudo pip install pep8 flake8 pyflakes isort yapf
+
 
 3.
 vim 
@@ -16,4 +25,5 @@ naglowek - deklaracja jaka wersja pythona
 5.
 list cwiczen
 
-
+6.
+sudo apt-get install silversearcher-ag

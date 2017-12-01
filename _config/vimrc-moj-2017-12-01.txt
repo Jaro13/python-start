@@ -1,0 +1,224 @@
+
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" added nerdtree
+Plugin 'scrooloose/nerdtree'
+
+"nerdteee - tabs przalaczenie sie - rjarek
+Plugin 'jistr/vim-nerdtree-tabs'
+
+
+Plugin 'kien/ctrlp.vim'
+Plugin 'rking/ag.vim'
+
+
+" add to .vimrc
+Plugin 'flazz/vim-colorschemes'
+
+Plugin 'tpope/vim-commentary'
+
+
+"colorscheme wombat256i
+
+
+" autosave file
+"Plugin '907th/vim-auto-save'
+
+" let g:auto_save = 1  " enable AutoSave on Vim startup
+
+"colorscheme wombat256
+"colorscheme wombat
+
+
+
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+"Plugin 'tpope/vim-fugitive'
+" plugin from http://vim-scripts.org/vim/scripts.html
+" Plugin 'L9'
+" Git plugin not hosted on GitHub
+"Plugin 'git://git.wincent.com/command-t.git'
+" git repos on your local machine (i.e. when working on your own plugin)
+"Plugin 'file:///home/gmarik/path/to/plugin'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+"Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Install L9 and avoid a Naming conflict if you've already installed a
+" different version somewhere else.
+" Plugin 'ascenator/L9', {'name': 'newL9'}
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+
+
+
+set incsearch
+"map <F4> :w! <CR>
+"map <F3> :wq <CR>
+map <F2> :q! <CR>
+map <F3> :q! <CR>
+map <F4> :q! <CR>
+
+
+set ai
+set hlsearch
+set incsearch
+set number
+set ruler
+set showcmd
+set si
+set wildmenu
+
+"kopiowanie bez formatowania
+
+set paste
+
+
+"color slate
+
+set expandtab
+set shiftwidth=4
+set tabstop=4
+
+map <C-n> :NERDTreeToggle<CR>
+
+set showmode                    " always show what mode we're currently editing in
+"set nowrap                      " don't wrap lines
+syntax on
+
+set showmode                    " always show what mode we're currently editing in
+
+
+
+"Easy escaping to normal model
+imap jj <esc>
+
+
+" Open splits
+nmap vs :vsplit<cr>
+nmap sp :split<cr>
+
+"zapisanie i uruchomienie php command line
+map <C-z> <Esc>:w<CR>:!php %<CR>
+
+"przejscie do shella z vim - powrot do vim takze taki skrot
+noremap <C-d> :sh<cr>
+
+set nocompatible   " Disable vi-compatibility
+set t_Co=256
+
+" I don't want to pull up these folders/files when calling CtrlP
+" https://vimawesome.com/plugin/ctrlp-vim-red
+set wildignore+=*/vendor/**
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_custom_ignore = {
+          \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+          \ 'file': '\v\.(exe|so|dll)$',
+          \ 'link': 'some_bad_symbolic_links',
+          \ }
+
+
+
+
+
+"Easy escaping to normal model
+imap jj <esc>
+
+
+
+" Quickly go forward or backward to buffer
+nmap :bp :BufSurfBack<cr>
+nmap :bn :BufSurfForward<cr>
+
+set showmode                    " always show what mode we're currently editing in
+set nowrap                      " don't wrap lines
+set tabstop=4                   " a tab is four spaces
+set smarttab
+set tags=tags
+set softtabstop=4               " when hitting <BS>, pretend like a tab is removed, even if spaces
+set expandtab                   " expand tabs by default (overloadable per file type later)
+set shiftwidth=4                " number of spaces to use for autoindenting
+set shiftround                  " use multiple of shiftwidth when indenting with '<' and '>'
+set backspace=indent,eol,start  " allow backspacing over everything in insert mode
+set autoindent                  " always set autoindenting on
+set copyindent                  " copy the previous indentation on autoindenting
+set number                      " always show line numbers
+set ignorecase                  " ignore case when searching
+set smartcase                   " ignore case if search pattern is all lowercase,
+set timeout timeoutlen=200 ttimeoutlen=100
+set visualbell           " don't beep
+set noerrorbells         " don't beep
+set autowrite  "Save on buffer switch
+set mouse=a
+
+
+" Down is really the next line
+nnoremap j gj
+nnoremap k gk
+
+
+
+autocmd cursorhold * set nohlsearch
+autocmd cursormoved * set hlsearch
+
+
+" Remove search results
+command! H let @/=""
+
+
+" Fast saves
+" nmap <leader>w :w!<cr>
+
+
+" zrobic!!!
+
+" szybkie wyjscie bez zapisywania - nie używać zapisywania - to powoduje bledy
+
+" nerdtree - wyjscie po zamknieciu vim - kiedy jest otwarty sam nerdtree
+
+" vim awesome - tutaj działac wiedzieć co robi i jak działa plugin
+
+" zamiast esc - jak przechodzić miedzy trybami -f2 i f3 - czy ctrl-z ?
+
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+colorscheme CandyPaper
+
+"let g:molokai_original = 1
+
+"let g:rehash256 = 1
+
+
+"show command line
+"set showcmd
+
+set cursorline
+
+
