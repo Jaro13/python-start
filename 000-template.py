@@ -5,11 +5,14 @@
 
 
 
-if __name__=='__main__':
+if __name__ == "__main__":
     main()
 
-"uruchomienie
+'''
+ruchomienie
+
 ctrl-z
 
 wyjscie z vim do linii polecen i powrot?
 
+'''
