@@ -1,0 +1,19 @@
+1.
+linux konfiguracja pythona env
+
+2.
+vim - autokomplete
+
+3.
+vim 
+ctrl-z - szybkie uruchamianie
+
+4.
+python skrypt - 
+main funkcja
+naglowek - deklaracja jaka wersja pythona
+
+5.
+list cwiczen
+
+
